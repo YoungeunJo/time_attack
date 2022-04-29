@@ -34,7 +34,7 @@ def save_post():
             'comment': postComment_receive,
             'time': mytime
         }
-        db.mylist.insert_one(doc)
+    db.test.insert_one(doc)
 
     return {"result": "success"}
 
