@@ -2,6 +2,11 @@ package com.example._0603;
 
 public class Main {
     public static void main(String[] args) {
+       boolean yesman = false;
+        System.out.println(yesman);
+    }
+
+    public static void yes() {
         Subnet subnet_a = new Subnet(1,"172.31.0.0/20","ap-northeast-2a");
         Subnet subnet_b = new Subnet(2,"172.31.16.0/20","ap-northeast-2b");
         Subnet subnet_c = new Subnet(3,"172.31.32.0/20","ap-northeast-2c");
@@ -25,4 +30,5 @@ public class Main {
         subnet_a.transfer("a send message!");
         subnet_d.transfer("d send message!");
     }
+    
 }
